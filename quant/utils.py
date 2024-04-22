@@ -1,7 +1,7 @@
 from collections import OrderedDict
-from quantize.int_linear import QuantLinear
+from quant.int_linear import QuantLinear
 import torch
-from quantize.int_matmul import QuantMatMul
+from quant.int_matmul import QuantMatMul
 from models.transformation import *
 
 

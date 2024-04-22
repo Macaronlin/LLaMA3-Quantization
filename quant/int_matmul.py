@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from quantize.quantizer import UniformAffineQuantizer
+from quant.quantizer import UniformAffineQuantizer
 
 
 class QuantMatMul(nn.Module):

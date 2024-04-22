@@ -3,7 +3,7 @@ import torch.nn as nn
 from models.int_llama_layer import QuantLlamaDecoderLayer
 from models.int_opt_layer import QuantOPTDecoderLayer
 from models.int_falcon_layer import QuantFalconDecoderLayer
-from quantize.int_linear import QuantLinear
+from quant.int_linear import QuantLinear
 from contextlib import nullcontext
 import copy
 import math
@@ -11,7 +11,7 @@ import utils
 import os
 import pdb
 import gc
-from quantize.utils import let_parameters, lwc_parameters, get_omni_parameters,\
+from quant.utils import let_parameters, lwc_parameters, get_omni_parameters,\
                             omni_state_dict, register_scales_and_zeros,smooth_and_quant_temporary,\
                             smooth_and_quant_inplace,clear_temp_variable,set_quant_state
 try:
